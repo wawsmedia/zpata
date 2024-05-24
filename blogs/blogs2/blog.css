@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "lato", "sans-serif";
+}
+
+
+/*--------------------------------Header----------------------------------*/
+
+.blog-header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 12vh;
+}
+
+.header-navbar a {
+    padding: 10px;
+    text-decoration: none;
+    color: #4971FF;
+}
+
+.header-button {
+    background-color: #4971FF;
+    width: 120px;
+    height: 30px;
+    color: white;
+    border-radius: 15px;
+    border: #4971FF 2px solid;
+}
+
+
+/*---------------Services----------------*/
+
+.service-drop-contents {
+    display: none;
+    list-style: none;
+    background-color: #4971FF;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 5%;
+}
+
+.service-drop-down:hover .service-drop-contents {
+    display: block;
+}
+
+.service-drop-contents a {
+    display: block;
+    margin-top: 5%;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.service-drop-contents a:hover {
+    background-color: white;
+}
+
+
+/*---------------Career----------------*/
+
+.career-drop-contents {
+    display: none;
+    list-style: none;
+    background-color: #4971FF;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 17%;
+}
+
+.career-drop-down:hover .career-drop-contents {
+    display: block;
+}
+
+.career-drop-contents a {
+    display: block;
+    margin-top: 5%;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.career-drop-contents a:hover {
+    background-color: white;
+}
+
+
+/*---------------Blogs----------------*/
+
+.blogs-drop-contents {
+    display: none;
+    list-style: none;
+    background-color: #4971FF;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 23%;
+}
+
+.blogs-drop-down:hover .blogs-drop-contents {
+    display: block;
+}
+
+.blogs-drop-contents a {
+    display: block;
+    margin-top: 5%;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blogs-drop-contents a:hover {
+    background-color: white;
+}
+
+
+/*---------------------------Intro------------------------------*/
+
+.blog-intro {
+    text-align: center;
+    margin: 2%;
+}
+
+
+/*------------------------main blogs------------------*/
+
+div.after::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.after {
+    margin: 2%;
+}
+
+.main-blogs {
+    width: 65%;
+    float: left;
+    border: whitesmoke 2px solid;
+    border-radius: 1%;
+    margin: 1%;
+}
+
+.contact-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    display: flex;
+    align-content: center;
+    margin: 2%;
+}
+
+.email {
+    display: flex;
+    margin: 2%;
+}
+
+.comments {
+    display: flex;
+    margin: 2%;
+}
+
+.facebook {
+    display: flex;
+    margin: 2%;
+}
+
+.IT-services {
+    position: relative;
+}
+
+.caption-IT {
+    position: absolute;
+    left: 77%;
+    top: 45%;
+    background-color: #EFF6FE;
+    color: #4971FF;
+    width: 150px;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.software-dev {
+    position: relative;
+}
+
+.caption-soft {
+    position: absolute;
+    left: 69%;
+    top: 45%;
+    background-color: #EFF6FE;
+    color: #4971FF;
+    width: 220px;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.web-dev {
+    position: relative;
+}
+
+.caption-web-dev {
+    position: absolute;
+    left: 71%;
+    top: 45%;
+    background-color: #EFF6FE;
+    color: #4971FF;
+    width: 200px;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.web-devel {
+    position: relative;
+}
+
+.caption-devel {
+    position: absolute;
+    left: 71%;
+    top: 45%;
+    background-color: #EFF6FE;
+    color: #4971FF;
+    width: 200px;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.continue-reading {
+    text-decoration: none;
+}
+
+
+/*------------------------side blogs------------------*/
+
+.side-blogs {
+    width: 30%;
+    float: left;
+    margin: 1%;
+}
+
+.search-bar {
+    border: whitesmoke 2px solid;
+    padding: 6%;
+}
+
+.blog-search-bar {
+    width: 85%;
+}
+
+.posts {
+    border: whitesmoke 2px solid;
+    margin-top: 2%;
+    padding: 6%;
+    overflow: auto;
+}
+
+.post-one {
+    margin-top: 10%;
+    margin-bottom: 7%;
+    overflow: auto;
+}
+
+.imge-post-one {
+    float: left;
+    margin-right: 2%;
+}
+
+.icon-post-one {
+    float: left;
+}
+
+.post-three {
+    margin-top: 10%;
+}
+
+.post-four {
+    margin-top: 10%;
+}
+
+.post-five {
+    margin-top: 10%;
+}
+
+.post-six {
+    margin-top: 10%;
+}
+
+.post-seven {
+    margin-top: 10%;
+}
+
+.catagories {
+    border: whitesmoke 2px solid;
+    padding: 6%;
+    margin-top: 5%;
+}
+
+.catagories h4 {
+    border-bottom: whitesmoke 2px solid;
+    padding: 5%;
+}
+
+.catagories h3 {
+    display: inline;
+    border-bottom: #4971FF 2px solid;
+}
+
+.archievs {
+    border: whitesmoke 2px solid;
+    padding: 10% 5%;
+    margin-top: 2%;
+}
+
+.archievs h4 {
+    border-bottom: whitesmoke 2px solid;
+    padding: 5%;
+    margin-top: 8%;
+}
+
+.archievs h3 {
+    display: inline-block;
+    border-bottom: #4971FF 2px solid;
+}
+
+
+/*------------------------Slide Nav-------------------*/
+
+.blog-slide {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: lighter;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.slide-nav {
+    text-align: center;
+}
+
+
+/*------------------------talk to us------------------*/
+
+.talk {
+    text-align: center;
+    margin: 5%;
+}
+
+.talk-showcase-flex {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.talk-showcase-text {
+    text-align: left;
+    margin-left: 45px;
+    line-height: 30px;
+}
+
+.tik {
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+
+.form-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 300px;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.talk-showcase-form {
+    margin: 5% 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.first-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.second-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.third-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.talk-showcase-button {
+    float: right;
+    background-color: #4971FF;
+    color: #ffffff;
+    border: 1px solid #4971FF;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+}
+
+
+/*-----------------------------Stats------------------------------------*/
+
+.stats {
+    text-align: center;
+}
+
+.stats-heading {
+    color: #4971FF;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5%;
+}
+
+
+/*------------------------------Footer-------------------------------------*/
+
+.foter {
+    background-color: black;
+    text-align: center;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.Services {
+    color: blanchedalmond;
+}
+
+.quick-links {
+    color: blanchedalmond;
+}
+
+.contacts,
+.news {
+    color: blanchedalmond;
+}
+
+.news {
+    margin-top: 10%;
+    text-align: left;
+}
+
+.main-foter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+}
+
+.footer-text {
+    color: blanchedalmond;
+}
+
+.zepta-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.socialmedia-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.socialmedia-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0%;
+    margin-top: 2%;
+}
+
+.quicklist {
+    list-style: none;
+}
+
+.quicklist a {
+    text-decoration: none;
+    color: white;
+}
+
+.quicklist li {
+    padding: 5%;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.quick-links {
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    margin: 0;
+    padding: 7%;
+}
+
+.adress-icon {
+    float: left;
+}
+
+.phone-icon {
+    float: left;
+}
+
+.email-icon {
+    float: left;
+}
+
+.timing-icon {
+    float: left;
+}
+
+.contactinfo-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.foter-navigaton {
+    background-color: #23232D;
+    padding: 0;
+}
+
+.footer-Copyright {
+    float: left;
+}
+
+.footer-PrivacyPolicy {
+    float: right;
+    margin-right: 2%
+}
+
+.footer-Terms-And-Services {
+    margin-left: 70%;
+}
+
+.foter-navigaton a {
+    text-decoration: none;
+    color: #EFF6FE;
+}
+
+
+/*---------------Footer Drop downs------------------*/
+
+.foter .blogs-drop-contents {
+    background-color: white;
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    overflow: auto;
+    text-align: center;
+}
+
+.foter .blogs-drop-contents a {
+    color: black;
+    text-align: left;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.foter .blogs-drop-contents li {
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 10%;
+    font-size: large;
+}
+
+.foter .blogs-drop-contents a:hover {
+    background-color: #23232D;
+}
+
+.foter .career-drop-contents {
+    background-color: white;
+    margin-left: 1%;
+    padding: 0;
+    width: 8%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.foter .career-drop-contents a {
+    color: #23232D;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.foter .career-drop-contents li {
+    color: #23232D;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 10%;
+    font-size: large;
+}
+
+.foter .career-drop-contents a:hover {
+    background-color: #23232D;
+}
+
+.foter .service-drop-contents {
+    background-color: white;
+    margin-left: 1%;
+    padding: 0;
+    width: 8%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.foter .service-drop-contents a {
+    color: #23232D;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.foter .service-drop-contents li {
+    color: #23232D;
+    text-align: center;
+    padding: 10%;
+    font-size: large;
+    margin: 0;
+    text-align: center;
+}
+
+.foter .service-drop-contents a:hover {
+    background-color: #23232D;
+}

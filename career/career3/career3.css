@@ -1,0 +1,428 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: "lato", "sans-serif";
+    }
+    /*--------------------------------Header----------------------------------*/
+    
+    .career2-header-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 12vh;
+    }
+    
+    .header-navbar a {
+        padding: 10px;
+        text-decoration: none;
+        color: #4971FF;
+    }
+    
+    .header-button {
+        background-color: #4971FF;
+        width: 120px;
+        height: 30px;
+        color: white;
+        border-radius: 15px;
+        border: #4971FF 2px solid;
+    }
+    /*---------------Services----------------*/
+    
+    .service-drop-contents {
+        display: none;
+        list-style: none;
+        background-color: #4971FF;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-left: 5%;
+    }
+    
+    .service-drop-down:hover .service-drop-contents {
+        display: block;
+    }
+    
+    .service-drop-contents a {
+        display: block;
+        margin-top: 5%;
+        color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .service-drop-contents a:hover {
+        background-color: white;
+    }
+    /*---------------Career----------------*/
+    
+    .career-drop-contents {
+        display: none;
+        list-style: none;
+        background-color: #4971FF;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-left: 17%;
+    }
+    
+    .career-drop-down:hover .career-drop-contents {
+        display: block;
+    }
+    
+    .career-drop-contents a {
+        display: block;
+        margin-top: 5%;
+        color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .career-drop-contents a:hover {
+        background-color: white;
+    }
+    /*---------------Blogs----------------*/
+    
+    .blogs-drop-contents {
+        display: none;
+        list-style: none;
+        background-color: #4971FF;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-left: 23%;
+    }
+    
+    .blogs-drop-down:hover .blogs-drop-contents {
+        display: block;
+    }
+    
+    .blogs-drop-contents a {
+        display: block;
+        margin-top: 5%;
+        color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .blogs-drop-contents a:hover {
+        background-color: white;
+    }
+    /*------------------------------Career3------------------------------------*/
+    
+    div.main::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .main {
+        border: whitesmoke 2px solid;
+        margin: 2% 5%;
+        padding: 1%;
+    }
+    
+    .side {
+        width: 35%;
+        float: left;
+        border-right: whitesmoke 2px solid;
+    }
+    
+    .center {
+        width: 65%;
+        float: left;
+        text-align: left;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    
+    form {
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    .job-form-input {
+        width: 60%;
+        border: whitesmoke 2px solid;
+        height: 35px;
+        border-radius: 15px;
+        margin-top: 3%;
+    }
+    
+    .submit {
+        background-color: #4971FF;
+        margin-left: 7%;
+        height: 35px;
+        width: 75px;
+        border: none;
+        border-radius: 30px;
+        color: white;
+    }
+    
+    .back {
+        background-color: white;
+        margin-left: 7%;
+        height: 35px;
+        width: 75px;
+        border: #4971FF 1px solid;
+        border-radius: 30px;
+        color: #4971FF;
+    }
+    
+    .icon {
+        float: left;
+        margin: 2%;
+    }
+    
+    .flex {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding: 3%;
+    }
+    
+    .skills {
+        background-color: #EFF6FE;
+        height: 35px;
+        width: 95px;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        font-weight: lighter;
+        margin-top: 5%;
+        margin-right: 2%;
+    }
+    /*------------------------------Footer-------------------------------------*/
+    
+    .foter {
+        background-color: black;
+        text-align: center;
+        margin-top: 5%;
+        padding: 2%;
+    }
+    
+    .Services {
+        color: blanchedalmond;
+    }
+    
+    .quick-links {
+        color: blanchedalmond;
+    }
+    
+    .contacts,
+    .news {
+        color: blanchedalmond;
+    }
+    
+    .news {
+        margin-top: 10%;
+        text-align: left;
+    }
+    
+    .main-foter-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5%;
+    }
+    
+    .footer-text {
+        color: blanchedalmond;
+    }
+    
+    .zepta-flex {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 10%;
+    }
+    
+    .socialmedia-icon {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .socialmedia-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+    
+    .quicklist {
+        list-style: none;
+    }
+    
+    .quicklist a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .quicklist li {
+        padding: 5%;
+        text-align: left;
+        margin-left: 15%;
+    }
+    
+    .quick-links {
+        text-align: center;
+    }
+    
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .contact-list {
+        list-style: none;
+    }
+    
+    .contact-list li {
+        margin: 0;
+        padding: 7%;
+    }
+    
+    .adress-icon {
+        float: left;
+    }
+    
+    .phone-icon {
+        float: left;
+    }
+    
+    .email-icon {
+        float: left;
+    }
+    
+    .timing-icon {
+        float: left;
+    }
+    
+    .contactinfo-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .foter-navigaton {
+        background-color: #23232D;
+        padding: 0;
+    }
+    
+    .footer-Copyright {
+        float: left;
+    }
+    
+    .footer-PrivacyPolicy {
+        float: right;
+        margin-right: 2%
+    }
+    
+    .footer-Terms-And-Services {
+        margin-left: 70%;
+    }
+    
+    .foter-navigaton a {
+        text-decoration: none;
+        color: #EFF6FE;
+    }
+    /*---------------Footer Drop downs------------------*/
+    
+    .foter .blogs-drop-contents {
+        background-color: white;
+        margin-left: 0;
+        padding: 0;
+        margin: 0;
+        width: 10%;
+        overflow: auto;
+        text-align: center;
+    }
+    
+    .foter .blogs-drop-contents a {
+        color: black;
+        text-align: left;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .foter .blogs-drop-contents li {
+        color: black;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding: 10%;
+        font-size: large;
+    }
+    
+    .foter .blogs-drop-contents a:hover {
+        background-color: #23232D;
+    }
+    
+    .foter .career-drop-contents {
+        background-color: white;
+        margin-left: 1%;
+        padding: 0;
+        width: 8%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .foter .career-drop-contents a {
+        color: #23232D;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .foter .career-drop-contents li {
+        color: #23232D;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding: 10%;
+        font-size: large;
+    }
+    
+    .foter .career-drop-contents a:hover {
+        background-color: #23232D;
+    }
+    
+    .foter .service-drop-contents {
+        background-color: white;
+        margin-left: 1%;
+        padding: 0;
+        width: 8%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .foter .service-drop-contents a {
+        color: #23232D;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .foter .service-drop-contents li {
+        color: #23232D;
+        text-align: center;
+        padding: 10%;
+        font-size: large;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .foter .service-drop-contents a:hover {
+        background-color: #23232D;
+    }

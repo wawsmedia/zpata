@@ -1,0 +1,9 @@
+.width{
+width:100vw;
+}
+.text{
+    background-color: white;
+    padding:5px;
+    border-radius: 10px;
+    margin: 7%;
+}
